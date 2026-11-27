@@ -3,14 +3,21 @@ class Hashset1 {
     public static void main(String[] args) {
         
     
-HashSet <String> courses = new HashSet<>(); 
-courses.add("Java");
- courses.add("Python");
- courses.add("React");
-  courses.add("Java");
-System.out.println(courses);
-System. out.println("Contains Java: " + courses. contains ("Java"));
- courses. remove ("Python");
-System.out.println("After Removal: " + courses);
+HashSet <Integer> ids= new HashSet<>(); 
+ids.add(101);
+ ids.add(102);
+ ids.add(103);
+  ids.add(104);
+System.out.println(ids);
+ids.add(105);
+System.out.println(ids);
+ ids. remove (104);
+System.out.println("After Removal: " + ids);
+System.out.println(ids.contains(103));
+System.out.println(ids);
+for (int id : ids) {
+            System.out.println(id);
+        }
+
 }
     }
